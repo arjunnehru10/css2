@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No:2</title>
+
+    <style>
+
+    h1 {
+        text-align: center;
+        background-color: bisque;
+        border: 4px solid rgb(0, 0, 0);
+        margin-left: 23%;
+        margin-right: 23%;
+
+    }
+    h2 {
+        text-align: center;
+        background-color:rgb(127, 255, 212 );
+        border: 4px solid rgb(0, 0, 0);
+        margin-left: 37%;
+        margin-right: 35%;
+    }
+
+  
+    .circle{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(132, 204, 255);
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 0 rgb(69, 67, 67);
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .circle:hover{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(28, 12, 253);
+    border: 2px transparent;
+    padding: 3%;
+    
+    box-shadow: 10px 10px 0 rgb(129, 159, 228);
+    
+    }
+
+    .rectangle{
+    width: 350px;
+    height: 200px;
+    background-color:rgb(178, 108, 244);
+    border: 3px dotted;
+    box-shadow: 10px 20px 0 rgb(69, 67, 67);
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .rectangle:hover{
+    width: 500px;
+    height: 250px;
+    background-color:rgb(133, 4, 254) ;
+    border: 4px dotted rgb(237, 230, 230);
+    padding: 3%;
+    
+    box-shadow: 10px 10px 0 rgb(210, 184, 235);
+    
+    }
+
+
+    .squire{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(225, 92, 120);
+    border: 2px solid black;
+    box-shadow: 10px 10px 0 rgb(69, 67, 67);
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .squire:hover{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(253, 12, 65);
+    border: 2px solid rgb(237, 230, 230);
+    padding: 3%;
+    
+    box-shadow: 10px 10px 0 rgb(217, 101, 101);
+    
+    }
+
+    .oval{
+    width: 350px;
+    height: 200px;
+    background-color: rgb(131, 250, 250);
+    border: 4px solid black;
+    border-radius: 50%;
+    box-shadow: 10px 10px 0 rgb(69, 67, 67);
+    margin-left: auto;
+    margin-right: auto;}
+
+    .oval:hover{
+    width: 450px;
+    height: 300px;
+    background-color:rgb(5, 247, 247);
+    border: 2px transparent;
+    padding: 3%;
+    
+    box-shadow: 10px 10px 0 rgb(136, 198, 198);
+    
+    }
+
+   .area1{
+    padding: 20px;
+    background-color: rgb(233, 100, 100);
+    color: white;
+    border: transparent;
+   } 
+   .closebtn{
+  margin-left: 15px;
+color: rgb(13, 1, 1);
+font-weight: bold;
+float:right;
+font-size: 22px;
+line-height: 20px;
+cursor: pointer;
+transition: 0.3s;}
+
+.closebtn:hover{
+    color: rgb(242, 235, 235);
+}
+
+.area2{
+padding: 18px;
+background-color: rgb(146, 239, 160);
+color: #f1f0f0;
+border:transparent;
+border: 2px solid transparent;
+border-radius: 10px;
+}
+#index1:hover{
+    background-color: rgb(96, 236, 20);
+    border:2px (transparent);
+}
+.area3{
+    padding: 22px;
+    background-color: rgb(137, 137, 245);
+    border: transparent ;
+    box-shadow: 20px 20px 0 rgb(178, 176, 176);
+}
+.area3:hover{
+    padding: 22px;
+    background-color: rgb(21, 21, 242);
+    border:transparent ;
+    border-radius: 15px;
+    box-shadow:20px 20px 0 rgb(132, 144, 232) ;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <h1>CREATE A SHAPE</h1>
+
+     <br><br>
+<h2>Circle</h2>
+<div class="circle"></div>
+    <br><br>
+
+    <h2>Rectange</h2>
+<div class="rectangle"></div>
+    <br><br>
+
+    <h2>Squre</h2>
+    <div class="squire"></div>
+
+    <br><br>
+
+    <h2>Oval</h2>
+    <div class="oval"></div>
+<br><br><br><br><br><br><br><br><br><br>
+<hr style="border: 3px solid black;">
+<br><br>
+
+<h1>MESSAGE BOXES</h1>
+<br>
+<h3>Alert message:</h3>
+
+<p>Click on the (x) symbol to close the alart message</p>
+<div class="area1">
+<span class="closebtn"
+onclick="this.parentElement.style.dislay='none';">&times</span>
+
+
+
+<p><strong>Danger!</strong> Some virus affect your device use antivirus</p>
+</div>
+<br><br>
+
+<div class="area2" id="index1">
+<span class="closebtn"
+onclick="this.parentElement.style.dislay='none';"
+>&times</span>
+<p><b>Success!</b>Indicates a successful or positive action.</p>
+</div>
+<br><br>
+
+<div class="area3" id="index2">
+<span class="closebtn"
+onclick="this.parentElement.style.dislay='none';"
+>&times</span>
+<p><b>Info!</b>You have 56 message to check</p>
+</div>
+<br><br><br><br>
+<hr style="border: 3px solid black;">
+
+<br><br>
+</body>
+
+</html>
